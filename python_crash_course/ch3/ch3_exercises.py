@@ -19,3 +19,4 @@ invitees.append('dave')
 invitees.append('thom')
 
 print('\n**DINNER UPDATE**\n\tHello all, I hope you''re doing well. I have decided to invite three new people over:\n' + invitees[-1].title() + ', ' + invitees[-2].title() + ', ' + invitees[-3].title() + '.\nPlease let me know if anyone takes issue with the addition of these fine folks for dinner.')
+

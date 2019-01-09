@@ -9,3 +9,8 @@ print(stuff[-1])
 
 # Prints the second to last item in the list, and so on
 print(stuff[-2])
+
+#* Remove an item by value
+
+stuff.remove('two')
+print(stuff)
