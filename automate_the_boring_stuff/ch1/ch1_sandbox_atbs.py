@@ -14,4 +14,4 @@ if response == "yes":
 elif response == "no":
     print("Well SCREW YOU!!!!!")
 else:
-    print("ENGLISH, MOTHERFUCKA! DO YOU SPEAK IT?")
+    print("ENGLISH! DO YOU SPEAK IT?")
