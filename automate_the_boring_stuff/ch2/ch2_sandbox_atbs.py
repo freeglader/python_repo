@@ -38,3 +38,40 @@ while True:
         break
 print('Phew, thanks! This human forced me to run an imfinite loop and you broke the spell!')
 
+#TODO: Continue Statements
+
+#? A continue statement takes the code execution right back to the start of the loop
+
+while True:
+    print('Who are u?')
+    name=input()
+    if name != 'Bob':
+        continue
+    print('Whaddup, Joe. I mean Bob. What\'s your password?')
+    password = input()
+    if password == 'balls':
+        break
+print('Access granted.')
+
+#TODO: for + range()
+
+#? Range can use 2 numbers separated by commas to get the range between them. 2nd number = numher to stop at, and isn't reached
+
+for i in (range(12,16)):
+    print(i)
+
+#? With 3 values in the range() function, first two are start and stop values, 3rd is step value
+
+for i in (range(0,11,2)):
+    print(i)
+
+#TODO: importing modules
+
+#? To import a module, you need import + module name + comma separated additional module names (optional)
+
+import random
+
+print(random.randint(1,10))
+
+import sys #* can be used to exit programs with sys.exit()
+
