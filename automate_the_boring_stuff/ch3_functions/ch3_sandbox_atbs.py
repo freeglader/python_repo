@@ -8,3 +8,4 @@ def hello():
 
 hello()  
 
+#* Functions with parameters
