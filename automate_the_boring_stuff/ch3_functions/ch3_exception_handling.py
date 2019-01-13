@@ -7,3 +7,13 @@ def spam(divideBy):
 print(spam(2))
 print(spam(0))
 print(spam(1)) # This last part won't get executed because the program errors out at the line above this one.
+
+#* Errors can be handled using try & except statements
+
+def spam(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+print(spam(0))
+print(spam(1))

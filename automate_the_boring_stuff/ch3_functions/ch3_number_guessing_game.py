@@ -1,3 +1,7 @@
+
+#TODO: The number guessing game will look something like the following:
+#TODO: I am thinking of a number between 1 and 20. Take a guess. (Guess is too low, guess is too high)
+
 import random
 
 print('Let\'s play a game. I will pick a number between 1 and 20, and you will get 5 guesses. Ready?')
@@ -25,3 +29,5 @@ def newGame():
             print('Thanks for playing!')
 
 newGame()
+
+
