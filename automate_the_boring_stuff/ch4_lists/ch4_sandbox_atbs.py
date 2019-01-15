@@ -65,3 +65,18 @@ print(str(height) + ' ' + str(color) + ' ' + str(appearance))
 #* Methods are called on values, while functions are simply called
 #? e.g. name.title() = method; str(appearance) = function
 
+#TODO: Inserting/appending items to a list
+#* Insert
+
+stuff = [1,2,3,5]
+stuff.insert(3, 4) #? With the insert method, you need an index and a value, separated by commas in the parentheses
+print(stuff) #? This will show you that the value 4 was added at position 3 from the above line of code
+
+
+#* Append
+
+stuff.append('six') #? Adds 'six' to the end of the list
+
+#* Remove
+
+stuff.remove('six') #? Removes 'six' from list - remove() method only removes first occurrence of item in list if there are multiple. 
