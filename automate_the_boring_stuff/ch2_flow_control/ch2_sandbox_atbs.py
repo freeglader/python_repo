@@ -36,7 +36,7 @@ while True:
     i = input()
     if i == 'SHUT UP!!':
         break
-print('Phew, thanks! This human forced me to run an imfinite loop and you broke the spell!')
+print('Phew, thanks! This human forced me to run an infinite loop and you broke the spell!')
 
 #TODO: Continue Statements
 

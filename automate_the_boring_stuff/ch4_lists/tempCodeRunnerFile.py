@@ -1,23 +1,20 @@
+import copy
 
-onesy = ('one',) #? Having a comma at the end of a list or tuple is valid python code
-                 #? If you try to put one value in a tuple without a comma, python will just think you're putting a value in parentheses for no reason
+#? Checking the difference between copy & no copy
 
-#* Check the variable type using the type() method
+testlist = [1,2,3,4,5]
 
-print(type(onesy)) #? <class 'tuple'>
+newtestlist = testlist
+newtestlist[0] = 5
+print(testlist) #? Assigning a list to another list doesn't make them separate - the values in testlist are changed when changing newtestlist
+print(newtestlist)
 
-onesy = ('poop','two') #? This is not the same as modifying the tuple. You're simply taking the values out of the var, then putting some other ones in.
-print(onesy)
+testlist[-1] = 'fart'
+print(newtestlist[-1])
 
-#onesy[0] = 'fart' #! Throws an error. Can't assign items
-#print(onesy[0])
+#? Here's the version using the copy module
 
-print(list(onesy[0])) #? Unexpected result: ['p', 'o', 'o', 'p'] - it turned the word poop into a list, with each character a separate item
-
-print(list('testing'))
-
-#* Convert tuple to list & try to reassign
-
-(list(onesy))[0] = 'stope'
-
-print(list(onesy[0]))
+testlist = [1,2,3,4,5]
+newtestlist = copy.copy(testlist)
+testlist[0] = 'boofer'
+print(newtestlist[0])
