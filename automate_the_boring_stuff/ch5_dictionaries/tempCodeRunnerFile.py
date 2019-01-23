@@ -6,5 +6,4 @@ myFaves = {'food': 'orange chicken', 'drink': 'diet coke', 'artist': 'travis sco
 
 print(myFaves)
 
-#? Playing with nested dictionaries
 print('My favorite book is: ' + myFaves['book']['title'] + '. The author is known as ' + myFaves['book']['author'] + '.')
