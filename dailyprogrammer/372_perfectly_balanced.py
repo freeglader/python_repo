@@ -50,14 +50,15 @@ def getStr():
     else:
         print('Xs and Ys were not equal.\nXs: ' + str(countX) + '\nYs: ' + str(countY))
 
-getStr()
+# getStr()
 
+#* Random dude's code, way simpler than mine. 
+#? NOTE: I had to change the function from "return xxxxx" to "answer = xxxxx". Need to review "return" statements to understand why
+def balanced(s):
+    answer = s.count('x') == s.count('y')
+    print(answer)
 
+def balanced_bonus(s):
+    answer = len(set([s.count(i) for i in s])) <= 1
 
-
-words = 'xxxxyyyy'
-print(words)
-words = words.split()
-print(words)
-words.
-
+balanced('xxxxxyyy')
