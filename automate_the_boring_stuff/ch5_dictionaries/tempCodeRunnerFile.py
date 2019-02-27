@@ -1,9 +1,11 @@
-# Chapter 5 - Dictionaries and Structuring Data
 
-#* Dictionaries are created with curly braces
+#* setdefault() method mini program - count all the occurences of the characters in the following message:
 
-myFaves = {'food': 'orange chicken', 'drink': 'diet coke', 'artist': 'travis scott', 'book': {'title': 'Pimp: The Story of My Life', 'author': 'Iceberg Slim'}} 
-
-print(myFaves)
-
-print('My favorite book is: ' + myFaves['book']['title'] + '. The author is known as ' + myFaves['book']['author'] + '.')
+message = 'Underneath the bridge the tarp has sprung a leak'
+count = {}
+for character in message:
+    count.setdefault(character, 0)
+    count[character] += 1
+print('MESSAGE: ' + message + '\n')
+print('Number of occurences for each character: \n')
+print(count.items())
