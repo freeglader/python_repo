@@ -45,11 +45,16 @@ spam.setdefault('color', 'black') #! This doesn't change anything, because the d
 
 #* setdefault() method mini program - count all the occurences of the characters in the following message:
 
+#! Import the module "pprint" - pprint was created to display output cleanly
+import pprint
 message = 'Underneath the bridge the tarp has sprung a leak'
 count = {}
 for character in message:
+    #? If the character isn't in the dictionary yet, creates a key & sets value to 0
     count.setdefault(character, 0)
+    #? Adds 1 to the value for that character, causing it to increment every time the loop finds another instance of that character
     count[character] += 1
 print('MESSAGE: ' + message + '\n')
 print('Number of occurences for each character: \n')
-print(count.items())
+#? pprint will display the dictionary in a much nicer way
+pprint.pprint(count)
