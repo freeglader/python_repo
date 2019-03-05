@@ -58,3 +58,4 @@ print('MESSAGE: ' + message + '\n')
 print('Number of occurences for each character: \n')
 #? pprint will display the dictionary in a much nicer way
 pprint.pprint(count)
+
