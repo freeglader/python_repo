@@ -16,3 +16,16 @@ def displayInventory(inventory):
     print('The total number of items: ' + str(item_total) + '\n')
 displayInventory(playerInventory)
         
+#* PART 2 - Create another function that takes a dictionary and a list, and adds items in the list to the dictionary then counts it like the previous function
+
+#? Function definition
+def addToInventory(inventory, addedItems): 
+    # loop through the dictionary
+    for k, v in inventory.items():
+        for i in addedItems:
+            if k == i:
+                inventory[k] += 1
+    displayInventory(inventory)
+
+dragonLoot = ['gold', 'dagger', 'gold']
+addToInventory(playerInventory,dragonLoot)
