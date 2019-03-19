@@ -1,10 +1,3 @@
 
-if 'hello' in 'hello world':
-    print('True')
-else:
-    print('false')
-
-if 'hello' in 'HELLO world':
-    print('True')
-else:
-    print('false')
+spam = ['My','favorite','food','is','pie']
+print(' '.join(spam))
